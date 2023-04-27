@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  
+  <body class="gradient-background">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img width="70"  src="carosel/logo-removebg-preview.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Album">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#best">Best</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container p-3">
+      <div class="row justify-content-center"><img class="col-7 col-md-3 " src="carosel/logo-removebg-preview.png" alt="" srcset=""></div>
+    </div>
+
+    <div class="container p-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 d-flex  justify-content-center align-items-center p-5 ">
+          
+          <svg style="cursor: pointer;" onclick="togglePlay()" color="#00000085" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+          </svg>
+         
+          <div id="audioContainer">
+            <div class="box quiet"></div>
+            <div class="box normal"></div>
+            <div class="box loud"></div>
+            <div class="box quiet"></div>
+            <div class="box normal"></div>
+            <div class="box loud"></div>
+            <div class="box normal"></div>
+            <div class="box quiet"></div>
+          </div>
+          <audio id="myAudio">
+            <source src="Latest Trick (Dire Straits) Deep house remix.mp3.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
+      
+    
+     
+
+
+    <main class="mt-5">
+
+        <!-- Carosel album -->
+
+        <div class="container">
+          <div class="row m-3 align-items-center">
+            <div class="col-md-4">
+              <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <img width="150" class="mx-auto d-block img-fluid" src="carosel/avanti6.jpg" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img width="150" class="mx-auto d-block img-fluid" src="carosel/5.jpg" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <img width="250" class="mx-auto d-block img-fluid " src="carosel/1.png" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img width="250" class="mx-auto d-block img-fluid" src="carosel/2.jfif" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img width="250" class="mx-auto d-block img-fluid" src="carosel/3.jpg" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner p-3">
+                  <div class="carousel-item active">
+                    <img width="150" class="mx-auto d-block img-fluid" src="carosel/avanti7.jpg" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img width="150" class="mx-auto d-block img-fluid" src="carosel/4.jpg" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="row justify-content-center ">
+
+            <p class="col-md-8 col-xs-11 fs-4 ">
+              Benvenuti nella nostra pagina sui Dire Straits, una delle band rock più famose degli anni '80. Fondata nel 1977 dal chitarrista e cantautore Mark Knopfler, la band ha venduto oltre 120 milioni di album in tutto il mondo, diventando una delle band di maggior successo del decennio.
+
+Il video che abbiamo selezionato per voi mostra una delle loro canzoni più famose, "Sultans of Swing", pubblicata nel 1978 e diventata subito un successo internazionale. La canzone è un perfetto esempio dello stile unico dei Dire Straits, che unisce il rock classico alla musica folk e al jazz, creando un suono inconfondibile e riconoscibile.
+
+Oltre a "Sultans of Swing", la band ha prodotto molti altri successi, come "Money for Nothing", "Walk of Life" e "Brothers in Arms", che hanno contribuito a consolidare il loro posto nella storia della musica rock.
+
+Se sei un fan dei Dire Straits o della musica rock in generale, non perderti questo video e approfitta dell'occasione per conoscere meglio questa band leggendaria.
+            </p>
+        </div>
+
+
+        <!-- Album -->
+
+        <div id="Album" class="container mt-5">
+          <div class="row align-items-baseline ">
+              <div class="col-lg-3 col-6 col-md-4 mt-2  d-flex justify-content-center">
+                  <div class="card p-3" style="width: 18rem;" >
+                      <img src="carosel/brothersiinarm.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <h5 class="card-title"> Brothers in Arms</h5>
+                      <p class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">So Far Away</li>
+                          <li class="list-group-item">Money for Nothing</li>
+                          <li class="list-group-item">Walk of Life</li>
+                          <li class="list-group-item">Your Latest Trick</li>
+                          <li class="list-group-item">Why Worry</li>
+                          <li class="list-group-item">Ride Across the River</li>
+                          <li class="list-group-item">The Man's Too Strong</li>
+                          <li class="list-group-item">One World</li>
+                          <li class="list-group-item">Brothers in Arms</li>
+                        </ul>
+                      </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 mt-2  d-flex justify-content-center">
+                  <div class="card p-3" style="width: 18rem;">
+                      <img src="carosel/communique.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <h5 class="card-title">Communique</h5>
+                      <p class="card-text"><ul class="list-group list-group-flush">
+                          <li class="list-group-item">Once Upon a Time in the West</li>
+                          <li class="list-group-item">News</li>
+                          <li class="list-group-item">Where Do You Think You're Going?</li>
+                          <li class="list-group-item">Communiqué</li>
+                          <li class="list-group-item">Lady Writer</li>
+                          <li class="list-group-item">Angel of Mercy</li>
+                          <li class="list-group-item">The Man's Too Strong</li>
+                          <li class="list-group-item">One World</li>
+                          <li class="list-group-item">Brothers in Arms</li>
+                        </ul>
+                      </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 mt-2 d-flex justify-content-center">
+                  <div class="card p-3" style="width: 18rem;">
+                      <img src="carosel/moneyfornothing.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <h5 class="card-title">On Every Street</h5>
+                      <p class="card-text"><ul class="list-group list-group-flush">
+                          <li class="list-group-item">So Far Away</li>
+                          <li class="list-group-item">Money for Nothing</li>
+                          <li class="list-group-item">Walk of Life</li>
+                          <li class="list-group-item">Your Latest Trick</li>
+                          <li class="list-group-item">Why Worry</li>
+                        </ul>
+                      </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-6 col-md-4 mt-2 d-flex justify-content-center">
+                  <div class="card p-3" style="width: 18rem;">
+                      <img src="carosel/elvis.jfif" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <h5 class="card-title">Calling Elvis</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+ 
+      <div id="best" class="conteiner">
+        <div class="row justify-content-center">
+          <div class="col-7 card text-bg-dark m-5 ">
+            <img  src="carosel/moneyfornothing.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Money for Nothing</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      
+        
+            
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
